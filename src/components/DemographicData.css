@@ -1,0 +1,42 @@
+/* src/components/DemographicData.css */
+.fun-fact {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.facts {
+  margin: 10px 10px;
+  padding: 10px 15px;
+  background-color: #e9ecef;
+  border-radius: 5px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.badge-title {
+  font-style: italic;
+  text-decoration: underline;
+  font-size: 21px;
+}
+
+.badge-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.badge-popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  text-align: left;
+}
+

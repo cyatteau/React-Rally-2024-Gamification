@@ -1,0 +1,253 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.profile-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #03254a;
+  padding: 10px 15px;
+  color: white;
+  box-sizing: border-box;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar .nav-links button {
+  color: white;
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  font-size: 16px;
+}
+
+.navbar .nav-links button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.navbar .nav-links .logout-button {
+  background-color: #dc3545;
+}
+
+.navbar .nav-links .logout-button:hover {
+  background-color: #c82333;
+}
+
+.profile-container {
+  background: white;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 800px;
+  width: 100%;
+}
+
+.profile-container h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+}
+
+.section {
+  margin-top: 30px;
+}
+
+.section h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.section h3:hover {
+  background-color: #0056b3;
+  transform: scale(1.02);
+}
+
+.badges-list,
+.visited-locations-list,
+.achievements-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.badges-list .badge-item,
+.achievements-list .achievement-card {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 5px 0;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s;
+  background-color: #f8f9fa;
+}
+
+.total-points {
+  display: flex;
+  justify-content: end;
+  margin-bottom: -10px;
+}
+
+.badges-list .badge-item:hover,
+.visited-locations-list li:hover {
+  background-color: #c0c5c7;
+}
+
+.visited-locations-list li:hover {
+  background-color: #656869;
+}
+
+.visited-locations-list li {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 5px 0;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s;
+  background-color: #919191;
+}
+
+.achievements-list .achievement-card {
+  background: #f8f9fa;
+  color: #333;
+  font-weight: normal;
+  cursor: default;
+  padding: 10px;
+}
+
+.achievement-card {
+  width: 16vw;
+}
+
+.no-achievements,
+.no-visited-locations {
+  color: #888;
+  font-style: italic;
+}
+
+.visited-location-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.visited-location-popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 300px;
+  width: 100%;
+}
+
+.visited-location-popup-content h4 {
+  margin-top: 0;
+}
+
+.visited-location-popup-content button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.visited-location-popup-content button:hover {
+  background-color: #0056b3;
+}
+
+@media (min-width: 768px) {
+  .logout-button {
+    width: auto;
+  }
+}
+
+.badges-list .badge-item {
+  display: flex;
+  align-items: center;
+}
+
+.badges-list .badge-item .badge-checkbox {
+  margin-right: 10px;
+}
+
+.badges-list .badge-item .badge {
+  flex: 1;
+}
+
+.share-selected {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.social-sharing {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.achievement-share-name {
+  margin-left: 7px;
+}
+
+.basemap-select {
+  padding: 8px;
+  margin-top: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  width: 100%;
+}

@@ -1,0 +1,520 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  background-color: #f0f4f8; /* Subtle light grey background */
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.App {
+  text-align: center;
+  margin-top: 0px;
+}
+
+h1 {
+  margin-top: 120px;
+  color: #2c3e50;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: -40px;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 15px 30px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar .nav-links button {
+  color: white;
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  font-size: 1em;
+}
+
+.navbar .nav-links button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.navbar .nav-links .logout-button {
+  background-color: #dc3545;
+}
+
+.navbar .nav-links .logout-button:hover {
+  background-color: #c82333;
+}
+
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 80px; /* Adjust for fixed navbar */
+}
+
+.layout-container.split-layout {
+  flex-direction: row;
+}
+
+.layout-container {
+  margin: 20px;
+}
+
+.stats-badges-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 700px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+  margin: 0 auto;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.location-input,
+.input-field {
+  width: 350px;
+  padding: 12px;
+  font-size: 19px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.suggestions {
+  position: absolute;
+  width: 100%;
+  max-width: 375px;
+  background-color: #fff;
+  margin-top: 0;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 4px 4px;
+  z-index: 1000;
+}
+
+.suggestions ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.suggestions li {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  transition: background-color 0.2s;
+}
+
+.suggestions li:hover {
+  background-color: #f0f0f0;
+}
+
+.map-container {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><circle cx="1" cy="1" r="1" fill="%23ddd" /></svg>')
+    repeat;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.stats-badges-container {
+  width: 93%;
+}
+
+@media (min-width: 1000px) {
+  .layout-container.split-layout {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 5vw;
+    width: 91vw;
+  }
+
+  .map-container {
+    width: 80%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 999px) {
+  .layout-container.split-layout {
+    flex-direction: column;
+  }
+
+  .map-container {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  width: 100%;
+  max-width: 300px;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.end-quest-button {
+  margin: 10px;
+  max-width: 210px;
+}
+
+.start-quest-button, .end-quest-button {
+  font-size: 20px;
+}
+
+.track-button {
+  background-color: #28a745;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.track-button:hover {
+  background-color: #218838;
+}
+
+.reset-button {
+  background-color: #ffc107;
+  font-size: 20px;
+}
+
+.reset-button:hover {
+  background-color: #e0a800;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #e9ecef;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.badge {
+  display: inline-block;
+  padding: 15px 15px 11px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.badge:hover {
+  transform: scale(1.1);
+  background-color: #007bff;
+}
+
+.badges-section {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.badge-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.badge-popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 300px;
+}
+
+.badge-popup-content h4 {
+  margin-top: 0;
+}
+
+.badge-popup-content button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.badge-popup-content button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .form-container,
+  .map-container {
+    width: 90%;
+    height: 100%;
+  }
+
+  .layout-container.split-layout {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+/* Add this to your App.css or a relevant CSS file */
+
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.congrats-popup {
+  background-color: white;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  animation: popup 0.5s ease-in-out;
+}
+
+/* Add a keyframe animation for the popup */
+@keyframes popup {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Quest progress message styles */
+.quest-message {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.modal-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.confirm-button,
+.cancel-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.confirm-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.confirm-button:hover {
+  background-color: #c82333;
+}
+
+.cancel-button {
+  background-color: #6c757d;
+  color: white;
+}
+
+.cancel-button:hover {
+  background-color: #5a6268;
+}
+
+/* Quest banner to indicate quest in progress */
+.quest-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  z-index: 2;
+  font-size: 1.2em;
+}
+
+/* Slightly darkened background during quest progress */
+.quest-in-progress {
+  background-color: rgba(0, 0, 0, 0.2); /* Light transparent black background */
+  position: fixed; /* Make it fixed to the viewport */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  right: 0; /* Align to the right */
+  bottom: 0; /* Align to the bottom */
+  z-index: 1;
+}
+
+/* Glowing effect for quest progress elements */
+.quest-progress {
+  border: 2px solid #ffc107;
+  padding: 15px 0;
+  box-shadow: 0 0 15px #ffc107;
+  background-color: rgba(
+    33,
+    33,
+    33,
+    0.9
+  ); /* Dark background with slight transparency */
+  color: white;
+  border-radius: 10px;
+  z-index: 3;
+}
+
+/* Ensure buttons are not affected by the flex layout */
+.quest-buttons {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 4; /* Ensure buttons are on top of the background overlay */
+}
+
+.quest-buttons button {
+  padding: 10px 20px;
+  background-color: #ffc107;
+  border: none;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.quest-buttons button:hover {
+  background-color: #ffa000;
+}

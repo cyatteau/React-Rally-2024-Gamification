@@ -1,0 +1,184 @@
+{
+  "landmarks": [
+    {
+      "name": "Bethesda Terrace",
+      "address": "Mid-Park at 72nd Street, New York, NY 10021",
+      "coordinates": {
+        "latitude": 40.774233,
+        "longitude": -73.970041
+      },
+      "description": "A grand terrace overlooking the Lake in Central Park.",
+      "quiz": [
+        {
+          "question": "What structure is located at Bethesda Terrace?",
+          "options": ["Fountain", "Museum", "Library", "Restaurant"],
+          "answer": "Fountain"
+        }
+      ]
+    },
+    {
+      "name": "Strawberry Fields",
+      "address": "Central Park West at 72nd Street, New York, NY 10023",
+      "coordinates": {
+        "latitude": 40.775876,
+        "longitude": -73.974153
+      },
+      "description": "A memorial to John Lennon, located near the Dakota, where he lived.",
+      "quiz": [
+        {
+          "question": "Who is honored at Strawberry Fields in Central Park?",
+          "options": [
+            "Elvis Presley",
+            "John Lennon",
+            "Frank Sinatra",
+            "Bob Dylan"
+          ],
+          "answer": "John Lennon"
+        }
+      ]
+    },
+    {
+      "name": "The Great Lawn",
+      "address": "Central Park, New York, NY 10024",
+      "coordinates": {
+        "latitude": 40.781394,
+        "longitude": -73.966138
+      },
+      "description": "A popular spot for picnics and outdoor concerts.",
+      "quiz": [
+        {
+          "question": "What is the Great Lawn known for?",
+          "options": ["Sports", "Concerts", "Art Exhibits", "Food Festivals"],
+          "answer": "Concerts"
+        }
+      ]
+    },
+    {
+      "name": "The Ramble",
+      "address": "Central Park, New York, NY 10024",
+      "coordinates": {
+        "latitude": 40.776928,
+        "longitude": -73.970239
+      },
+      "description": "A wooded area with winding paths, offering a tranquil escape in Central Park.",
+      "quiz": [
+        {
+          "question": "What feature is The Ramble known for?",
+          "options": [
+            "Waterfalls",
+            "Wooded Paths",
+            "Rose Gardens",
+            "Mountain Views"
+          ],
+          "answer": "Wooded Paths"
+        }
+      ]
+    },
+    {
+      "name": "Alice in Wonderland Statue",
+      "address": "East 74th Street, New York, NY 10021",
+      "coordinates": {
+        "latitude": 40.774207,
+        "longitude": -73.967702
+      },
+      "description": "A bronze statue depicting characters from Lewis Carroll's classic book.",
+      "quiz": [
+        {
+          "question": "Which character is prominently featured in this Central Park statue?",
+          "options": [
+            "Cinderella",
+            "Alice in Wonderland",
+            "Peter Pan",
+            "Robin Hood"
+          ],
+          "answer": "Alice in Wonderland"
+        }
+      ]
+    },
+    {
+      "name": "Eccles Center for the Performing Arts",
+      "address": "1750 Kearns Blvd, Park City, UT 84060",
+      "coordinates": {
+        "latitude": 40.659778,
+        "longitude": -111.501333
+      },
+      "description": "A premier venue for performances and events in Park City.",
+      "quiz": [
+        {
+          "question": "What type of events are held at the Eccles Center?",
+          "options": [
+            "Concerts",
+            "Sports Events",
+            "Art Exhibitions",
+            "Lectures"
+          ],
+          "answer": "Concerts"
+        }
+      ]
+    },
+    {
+      "name": "Park City High School",
+      "address": "1750 Kearns Blvd, Park City, UT 84060",
+      "coordinates": {
+        "latitude": 40.65947,
+        "longitude": -111.5022
+      },
+      "description": "A prominent high school in Park City.",
+      "quiz": [
+        {
+          "question": "What is the mascot of Park City High School?",
+          "options": ["Miners", "Tigers", "Eagles", "Panthers"],
+          "answer": "Miners"
+        }
+      ]
+    },
+    {
+      "name": "Rotary Park",
+      "address": "1300 Iron Horse Dr, Park City, UT 84060",
+      "coordinates": {
+        "latitude": 40.658194,
+        "longitude": -111.506533
+      },
+      "description": "A peaceful park with scenic views and picnic areas.",
+      "quiz": [
+        {
+          "question": "What activity is Rotary Park best known for?",
+          "options": ["Picnics", "Fishing", "Rock Climbing", "Skiing"],
+          "answer": "Picnics"
+        }
+      ]
+    },
+    {
+      "name": "Park City Ice Arena",
+      "address": "600 Gillmor Way, Park City, UT 84060",
+      "coordinates": {
+        "latitude": 40.658311,
+        "longitude": -111.488528
+      },
+      "description": "An indoor ice skating rink offering public skating and hockey.",
+      "quiz": [
+        {
+          "question": "What is the primary activity at Park City Ice Arena?",
+          "options": ["Ice Skating", "Basketball", "Swimming", "Tennis"],
+          "answer": "Ice Skating"
+        }
+      ]
+    },
+    {
+      "name": "Prospector Square",
+      "address": "2175 Sidewinder Dr, Park City, UT 84060",
+      "coordinates": {
+        "latitude": 40.661789,
+        "longitude": -111.493442
+      },
+      "description": "A bustling area with shops, restaurants, and lodging.",
+      "quiz": [
+        {
+          "question": "What is Prospector Square known for?",
+          "options": ["Shopping", "Skiing", "Biking", "Climbing"],
+          "answer": "Shopping"
+        }
+      ]
+    }
+  ]
+}

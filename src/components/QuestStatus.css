@@ -1,0 +1,30 @@
+.quest-progress {
+  border: 2px solid #ffc107;
+  padding: 15px 0;
+  box-shadow: 0 0 15px #ffc107;
+  background-color: rgba(
+    33,
+    33,
+    33,
+    0.9
+  );
+  color: white;
+  border-radius: 10px;
+  z-index: 3;
+  text-align: center;
+}
+
+.progress-bar-container {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 10px auto;
+  width: 80%;
+  height: 20px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #ffc107;
+  transition: width 0.5s ease;
+}
