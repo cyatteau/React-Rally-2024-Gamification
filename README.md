@@ -3,8 +3,8 @@
 ## Slides
 A [PDF copy](https://github.com/cyatteau/React-Rally-2024-Gamification/blob/master/Gamification-Presentation-PDF.pdf) of the slides.
 
-## Requirements
-- Sign up for an [Esri Developer Account](https://developers.arcgis.com/sign-up/).
+## Requirements <a name="req"></a>
+- Sign up for an [ArcGIS Location Platform Account](https://location.arcgis.com/sign-up/).
 - Get an ArcGIS API key or Authentication token.
 
 ## Setup Info
